@@ -1,0 +1,58 @@
+.header__menu {
+  margin-left: 200px;
+  border: 1px solid var(--color-black);
+  border-radius: 4%;
+  width: 220px;
+  height: 170px;
+  font: var(--text-regular-13);
+}
+
+.header__menu-title {
+  display: flex;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  justify-content: center;
+  margin: 0px;
+  padding: 10px 0px;
+  font: var(--text-regular-13);
+  background-color: var(--color-gray-800);
+  color: var(--color-white);
+}
+
+.header__menu-list {
+  display: flex;
+  height: 136.41px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 14px;
+  margin: 0px;
+  color: var(--color-gray-800);
+}
+
+.header__menu-item {
+  display: block;
+  margin: 7px 0px;
+}
+
+.header__menu-item::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+}
+
+.header__menu-item_icon-color::before {
+  background: url("../../assets/color-icon.svg") no-repeat left/14px;
+}
+
+.header__menu-item_icon-notification::before {
+  background: url("../../assets/notification-icon.svg") no-repeat left/14px;
+}
+
+.header__menu-item_icon-hide {
+  background: url("../../assets/hide-icon.svg") no-repeat left/14px;
+}
+
+.header__menu-item_icon-exit {
+  background: url("../../assets/exit-icon.svg") no-repeat left/14px;
+}
