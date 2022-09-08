@@ -1,0 +1,18 @@
+.header__nav-list {
+  display: flex;
+  padding: 0px;
+}
+
+.header__nav-item {
+  display: block;
+}
+
+.header__nav-link {
+  margin: 0px 10px;
+  font: var(--text-bold-14);
+  color: var(--color-gray-600);
+}
+
+.header__nav-link_current-page {
+  color: var(--color-gray-800);
+}
