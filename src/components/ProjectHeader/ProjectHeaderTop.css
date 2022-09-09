@@ -1,3 +1,10 @@
+.project-header__top {
+  display: flex;
+  width: 337px;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
 .project-header__color-box {
   width: 50px;
   height: 50px;
@@ -8,7 +15,11 @@
   background-color: blue;
 }
 
-.project-header__bookmark, .porject-header__three-dots {
+.project-header__bookmark-icon {
+  width: 18px;
+}
+
+.project-header__bookmark, .project-header__three-dots {
   background-color: white;
   overflow: visible;
   margin: 0px;
@@ -17,12 +28,19 @@
 }
 
 .project-header__three-dots {
-  background: none;
-  overflow: visible;
-  border: none;
+  width: 18px;
+  height: fit-content;
+}
+
+.project-header__three-dots:hover {
+  cursor: pointer;
 }
 
 /* ProjectHeaderConfig element의 스타일링 코드 시작 */
+
+.hidden {
+  display: none;
+}
 
 .project-header__menu {
   margin-left: 20px;

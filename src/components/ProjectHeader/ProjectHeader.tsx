@@ -13,7 +13,7 @@ const ProjectHeader = (props: EmptyProps) => {
     <header className="project-header">
       <ProjectHeaderTop projectColor={projectColor} projectName={projectName}></ProjectHeaderTop>
       <ProjectHeaderNav/>
-      <SearchBar/>
+      <SearchBar className="project-header__search-bar"/>
     </header>
   )
 }

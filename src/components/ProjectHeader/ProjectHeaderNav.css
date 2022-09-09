@@ -1,5 +1,12 @@
+.project-header__nav {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  width: 375px;
+}
+
 .project-header__nav-list {
   display: flex;
+  justify-content: space-around;
   padding: 0px;
 }
 
@@ -8,7 +15,6 @@
 }
 
 .project-header__nav-link {
-  margin: 0px 10px;
   font: var(--text-bold-14);
   color: var(--color-gray-600);
 }
