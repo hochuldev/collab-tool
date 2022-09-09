@@ -1,11 +1,11 @@
 import React from "react";
-import "./HeaderMenu.css"
+import "./HeaderConfig.css"
 
 interface project {
   projectName: string
 }
 
-const HeaderMenu = (props:project) => {
+const HeaderConfig = (props:project) => {
   return (
     <div className="header__menu">
       <div className="header__menu-title">
@@ -21,4 +21,4 @@ const HeaderMenu = (props:project) => {
   )
 }
 
-export default HeaderMenu
+export default HeaderConfig

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import './Header.css';
+import './ProjectHeader.css';
 import { EmptyProps } from "../../typeDeclaration";
-import HeaderMenu from "./HeaderMenu";
+import ProjectHeaderConfig from "./ProjectHeaderConfig";
 import bookmark from "../../assets/bookmark-icon.png"
-import HeaderNav from "./HeaderNav";
+import ProjectHeaderNav from "./ProjectHeaderNav";
 import SearchBar from "../SearchBar/SearchBar";
 
 const Header = (props: EmptyProps) => {
@@ -17,9 +17,9 @@ const Header = (props: EmptyProps) => {
       <button className="header__bookmark">
         <img src={bookmark} alt="북마크 버튼" />
       </button>
-      <HeaderMenu projectName={projectName}></HeaderMenu>
+      <ProjectHeaderConfig projectName={projectName}></ProjectHeaderConfig>
       <h1>{projectName + " 업무 공유방"}</h1> {/* TODO: 아이콘 추가, 스타일링 추가 */}
-      <HeaderNav/>
+      <ProjectHeaderNav/>
       <SearchBar/>
     </header>
   )
