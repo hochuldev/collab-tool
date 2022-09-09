@@ -1,4 +1,30 @@
-.header__menu {
+.project-header__color-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+}
+
+.project-header__color-box_blue {
+  background-color: blue;
+}
+
+.project-header__bookmark, .porject-header__three-dots {
+  background-color: white;
+  overflow: visible;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
+.project-header__three-dots {
+  background: none;
+  overflow: visible;
+  border: none;
+}
+
+/* ProjectHeaderConfig element의 스타일링 코드 시작 */
+
+.project-header__menu {
   margin-left: 20px;
   border: 1px solid var(--color-black);
   border-radius: 4%;
@@ -8,7 +34,7 @@
   z-index: 10000;
 }
 
-.header__menu-title {
+.project-header__menu-title {
   display: flex;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -20,7 +46,7 @@
   color: var(--color-white);
 }
 
-.header__menu-list {
+.project-header__menu-list {
   display: flex;
   height: 136.41px;
   flex-direction: column;
@@ -30,30 +56,30 @@
   color: var(--color-gray-800);
 }
 
-.header__menu-item {
+.project-header__menu-item {
   display: block;
   margin: 7px 0px;
 }
 
-.header__menu-item::before {
+.project-header__menu-item::before {
   content: "";
   display: inline-block;
   width: 20px;
   height: 14px;
 }
 
-.header__menu-item_icon-color::before {
+.project-header__menu-item_icon-color::before {
   background: url("../../assets/color-icon.svg") no-repeat left/14px;
 }
 
-.header__menu-item_icon-notification::before {
+.project-header__menu-item_icon-notification::before {
   background: url("../../assets/notification-icon.svg") no-repeat left/14px;
 }
 
-.header__menu-item_icon-hide {
+.project-header__menu-item_icon-hide {
   background: url("../../assets/hide-icon.svg") no-repeat left/14px;
 }
 
-.header__menu-item_icon-exit {
+.project-header__menu-item_icon-exit {
   background: url("../../assets/exit-icon.svg") no-repeat left/14px;
 }
