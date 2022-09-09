@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import Header from './components/Header/Header';
+import ProjectHeader from './components/ProjectHeader/ProjectHeader';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header></Header>
+        <ProjectHeader></ProjectHeader>
       </div>
     </BrowserRouter>
   );
