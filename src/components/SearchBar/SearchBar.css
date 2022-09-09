@@ -10,7 +10,6 @@
 
 .search-bar__icon {
   width: 14px;
-  color: var(--color-gray-700);
   margin-right: 5px;
 }
 
@@ -19,6 +18,10 @@
   outline: none;
   font: var(--text-regular-13);
   color: var(--color-gray-700)
+}
+
+.search-bar__input {
+  color: var(--color-blue-400);
 }
 
 .search-bar__button {
