@@ -1,0 +1,9 @@
+.button {
+  background-color: white;
+  overflow: visible;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  width: 18px;
+  height: fit-content;
+}
