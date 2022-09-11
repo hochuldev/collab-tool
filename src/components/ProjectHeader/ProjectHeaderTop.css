@@ -15,21 +15,8 @@
   background-color: blue;
 }
 
-.project-header__bookmark-icon {
-  width: 18px;
-}
-
 .project-header__bookmark, .project-header__three-dots {
-  background-color: white;
-  overflow: visible;
-  margin: 0px;
-  padding: 0px;
-  border: none;
-}
-
-.project-header__three-dots {
   width: 18px;
-  height: fit-content;
 }
 
 .project-header__three-dots:hover {
