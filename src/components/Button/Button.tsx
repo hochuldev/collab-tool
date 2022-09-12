@@ -1,15 +1,6 @@
 import { ReactNode } from "react";
 import "./Button.css"
-
-interface ButtonProps {
-  width: string;
-  height?: string;
-  border?: string;
-  borderRadius?: string;
-  shadow?: string;
-  className?: string;
-  children?: ReactNode
-}
+import { StandardProps } from "../../typeDeclaration";
 
 const Button = ({
   width,
@@ -19,7 +10,7 @@ const Button = ({
   shadow,
   className,
   children,
-}: ButtonProps) => {
+}: StandardProps) => {
   return (
     <button
       type="button"
