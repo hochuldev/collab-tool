@@ -119,6 +119,10 @@ html{
   font-size: var(--base-size);
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body{
   color: var(--color-black);
   background: var(--color-white);
