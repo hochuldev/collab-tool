@@ -21,7 +21,7 @@ const ProjectHeaderNav = (props: EmptyProps) => {
           <Link className={createLinkClassName(currentPage, "/home")} to="/home">홈</Link>
         </li> 
         <li className="project-header__nav-item">
-          <Link className={createLinkClassName(currentPage, "/task")} to="task">업무</Link>
+          <Link className={createLinkClassName(currentPage, "/tasks")} to="tasks">업무</Link>
         </li>
         <li className="project-header__nav-item">
           <Link className={createLinkClassName(currentPage, "/gaant-chart")} to="gaant-chart">간트차트</Link>
@@ -30,10 +30,10 @@ const ProjectHeaderNav = (props: EmptyProps) => {
           <Link className={createLinkClassName(currentPage, "/calendar")} to="calendar">캘린더</Link>
         </li>
         <li className="project-header__nav-item">
-          <Link className={createLinkClassName(currentPage, "/file")} to="file">파일</Link>
+          <Link className={createLinkClassName(currentPage, "/files")} to="files">파일</Link>
         </li>
         <li className="project-header__nav-item">
-          <Link className={createLinkClassName(currentPage, "/notification")} to="notification">알림</Link>
+          <Link className={createLinkClassName(currentPage, "/notifications")} to="notifications">알림</Link>
         </li>
       </ul>
     </nav>
