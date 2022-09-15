@@ -1,9 +1,0 @@
-.sidebar__button_blue-background {
-  background-color: var(--color-purple-400);
-  color: var(--color-white);
-  border-radius: 6px;
-}
-
-.sidebar__button {
-  font: var(--text-medium-13);
-}

@@ -1,35 +1,39 @@
-import React, {ReactNode} from "react";
-import "./Sidebar.css"
-import Button from "../Button/Button";
+import React, { ReactNode } from 'react'
+import SidebarSection from './Section'
+import './Sidebar.css'
+// import Main from "./Main";
+// interface SidebarProps {
+//   width?: string,
+//   theme: 'light' | 'dark',
+//   className?: string,
+//   children: ReactNode
+// }
+
+// const determineColor = (theme: "light" | "dark") => {
+//   if(theme === "light") {
+//     return {
+//       backgroundColor: "rgb(238, 238, 238)",
+//       color: "rgb(204,204,204)"
+//     }
+//   } else {
+//     return {
+//       backgroundColor: "rgb(44, 42, 52)",
+//       color: "black",
+//     }
+//   }
+// }
+
 interface SidebarProps {
-  width: string,
-  theme: 'light' | 'dark',
-  className: string,
   children: ReactNode
+  className?: string
 }
 
-const determineColor = (theme: "light" | "dark") => {
-  if(theme === "light") {
-    return {
-      backgroundColor: "rgb(238, 238, 238)",
-      color: "rgb(204,204,204)"
-    }
-  } else {
-    return {
-      backgroundColor: "rgb(44, 42, 52)",
-      color: "black",
-    }
-  }
+const Sidebar = ({ className, children }: SidebarProps) => {
+  return <aside className={'sidebar ' + className}>{children}</aside>
 }
 
-const Sidebar = ({width, className, theme, children}: SidebarProps) => {
+const willExport = Object.assign(Sidebar, {
+  Section: SidebarSection,
+})
 
-  const {backgroundColor, color} = determineColor(theme)
-  return (
-    <aside className={"sidebar " + className} style={{width: width, backgroundColor: backgroundColor, color: color}}>
-      {children}
-    </aside>
-  )
-}
-
-export default Sidebar
+export default willExport
