@@ -10,7 +10,7 @@
 
 # production
 /build
-/tryHTMLCSS
+/temp
 
 # misc
 .DS_Store
