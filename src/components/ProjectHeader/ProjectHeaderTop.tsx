@@ -41,7 +41,7 @@ const ProjectHeaderTop = ({projectName, projectColor}: {projectName: string, pro
         <img className="project-header__three-dots" src={threeDotsIcon} alt="프로젝트 설정 버튼" onClick={toggleHidden}></img>
       </Button>
       <ProjectHeaderMenu projectName={projectName} hidden={hidden}></ProjectHeaderMenu>
-      <h1>{projectName + " 업무 공유방"}</h1> {/* TODO: 아이콘 추가, 스타일링 추가 */}
+      <h1>{projectName + " 업무 공유방"}</h1>
     </div>
   )
 }
