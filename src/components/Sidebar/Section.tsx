@@ -1,7 +1,10 @@
+// 사이드바 컴포넌트의 서브 컴포넌트인 Section 컴포넌트를 합성 패턴으로 확장하지 않으면서,
+// props 개수가 많아지고, 컴포넌트가 복잡해졌다.
+// 이 때문에, 새로운 확장 가능한 서브 컴포넌트인 SectionComposable을 추가했다.
+
 import Button from '../Button/Button'
 import React, { JSXElementConstructor, ReactElement, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './Main.css'
 
 export interface SidebarSectionProps {
   title?: string
@@ -50,11 +53,13 @@ const addLink = ({
       to={address as string}
       className="sidebar__list-item sidebar__list-item_dark"
     >
-      {Icon !== undefined ? <Icon
-        stroke={color}
-        fill={color}
-        className="sidebar__icon sidebar__icon_dark"
-      /> : undefined}
+      {Icon !== undefined ? (
+        <Icon
+          stroke={color}
+          fill={color}
+          className="sidebar__icon sidebar__icon_dark"
+        />
+      ) : undefined}
       {text}
     </Link>
   )
