@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import SidebarSection from './Section'
 import './Sidebar.css'
-// import Main from "./Main";
+
 // interface SidebarProps {
 //   width?: string,
 //   theme: 'light' | 'dark',
