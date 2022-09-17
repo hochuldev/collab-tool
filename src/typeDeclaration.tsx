@@ -12,3 +12,7 @@ export interface StandardProps {
   className?: string;
   children?: ReactNode
 }
+
+export interface ReactChildrenProp {
+  children: ReactNode
+}
