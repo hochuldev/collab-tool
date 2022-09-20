@@ -46,7 +46,7 @@
   border-radius: 7px;
   padding-left: 20px;
   font: var(--text-regular-16);
-  color: var(--color-gray-600);
+  color: black;
 }
 
 .login__input::placeholder{
