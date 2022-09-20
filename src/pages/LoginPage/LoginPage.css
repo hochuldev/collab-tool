@@ -1,11 +1,31 @@
-.login {
-  width:586px;
-  margin: 0 auto;
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto;
+}
+
+@media (min-width: 250px) {
+  .login{
+    width:90%;
+  }
+}
+
+@media (min-width: 768px){
+  .login {
+    width: 586px;
+  }
+}
+
+@media (min-height: 564px) {
+  .login{
+    height: 100vh;
+  }
 }
 
 .login__title{
   width: fit-content;
-  margin: 20px auto;
+  margin: 0px auto 20px auto;
   font: var(--title-bold-32);
 }
 
@@ -49,13 +69,21 @@
   color: var(--color-blue-600);
 }
 
-.login__button_login{
+.login__button_login, .login__button_register{
   margin: 20px 0px;
   height: 52px;
   border-radius: 7px;
   background-color: var(--color-blue-600);
   font: var(--text-medium-16);
   color: var(--color-white);
+  text-decoration-line: none;
+}
+
+.login__button_register{
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login__icon_auto-login{
