@@ -2,6 +2,10 @@ import { ReactNode } from "react";
 import "./Button.css"
 import { StandardProps } from "../../typeDeclaration";
 
+interface ButtonProps extends StandardProps{
+  onClick?: React.MouseEventHandler
+}
+
 const Button = ({
   width,
   height,
@@ -9,8 +13,9 @@ const Button = ({
   borderRadius,
   shadow,
   className,
+  onClick,
   children,
-}: StandardProps) => {
+}: ButtonProps) => {
   return (
     <button
       type="button"
@@ -22,6 +27,7 @@ const Button = ({
         borderRadius: borderRadius,
         boxShadow: shadow,
       }}
+      onClick={onClick}
     >
       {children}
     </button>
