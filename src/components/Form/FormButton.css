@@ -1,0 +1,9 @@
+.login__button{
+  margin: 20px 0px;
+  height: 52px;
+  border-radius: 7px;
+  background-color: var(--color-blue-600);
+  font: var(--text-medium-16);
+  color: var(--color-white);
+  text-decoration-line: none;
+}

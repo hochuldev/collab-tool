@@ -1,0 +1,10 @@
+.form__link{
+  width: fit-content;
+  font: var(--text-medium-14);
+  color: black;
+  text-decoration-line: underline;
+}
+
+.form__link:hover{
+  color: var(--color-blue-600);
+}
