@@ -32,8 +32,8 @@ const Sidebar = ({ className, children }: SidebarProps) => {
   return <aside className={'sidebar ' + className}>{children}</aside>
 }
 
-const willExport = Object.assign(Sidebar, {
+const toBeExported = Object.assign(Sidebar, {
   Section: SidebarSection,
 })
 
-export default willExport
+export default toBeExported
