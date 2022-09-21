@@ -1,0 +1,30 @@
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto;
+}
+
+@media (min-width: 250px) {
+  .login{
+    width:90%;
+  }
+}
+
+@media (min-width: 768px){
+  .login {
+    width: 586px;
+  }
+}
+
+@media (min-height: 564px) {
+  .login{
+    height: 100vh;
+  }
+}
+
+.login__title{
+  width: fit-content;
+  margin: 0px auto 20px auto;
+  font: var(--title-bold-32);
+}
