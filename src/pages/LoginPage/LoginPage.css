@@ -53,11 +53,6 @@
   color: var(--color-gray-600);
 }
 
-.login__button{
-  display:block;
-  font: var(--text-medium-14);  
-}
-
 .login__button_find-password{
   width: fit-content;
   font: var(--text-medium-14);
