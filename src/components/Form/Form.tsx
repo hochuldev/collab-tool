@@ -2,11 +2,17 @@ import { ReactChildrenProp } from "../../typeDeclaration"
 import FormButton from "./FormButton"
 import FormCheckBox from "./FormCheckBox"
 import FormLink from "./FormLink"
-import FormText from "./FormText"
+import FormTextInput from "./FormTextInput"
+import FormSeparator from "./FormSeparator"
+import "./Form.css"
 
-const Form = ({children}: ReactChildrenProp) => {
+interface FormInterface extends ReactChildrenProp{
+  className?: string
+}
+
+const Form = ({className, children}: FormInterface) => {
   return(
-    <div>
+    <div className={className || "form"}>
       {children}
     </div>
   )
@@ -16,7 +22,8 @@ const toBeExported = Object.assign(Form,{
   Button: FormButton,
   CheckBox: FormCheckBox,
   Link: FormLink,
-  Text: FormText
+  TextInput: FormTextInput,
+  Separator: FormSeparator
 })
 
 export default toBeExported
