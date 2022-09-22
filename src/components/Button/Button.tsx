@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
 import "./Button.css"
 import { StandardProps } from "../../typeDeclaration";
 
 interface ButtonProps extends StandardProps{
   onClick?: React.MouseEventHandler
+  id?: string
 }
 
 const Button = ({
@@ -14,10 +14,12 @@ const Button = ({
   shadow,
   className,
   onClick,
+  id,
   children,
 }: ButtonProps) => {
   return (
     <button
+      id={id}
       type="button"
       className={"button " + className}
       style={{
