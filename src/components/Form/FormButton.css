@@ -1,4 +1,4 @@
-.login__button{
+.form__button{
   margin: 20px 0px;
   height: 52px;
   border-radius: 7px;
@@ -6,4 +6,11 @@
   font: var(--text-medium-16);
   color: var(--color-white);
   text-decoration-line: none;
+}
+
+.form__button_is-link{
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
